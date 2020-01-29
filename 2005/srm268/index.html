@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SRM268 - Division2脱出 - my-github-actions-test</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="twitter:card"  content="summary" />
+    <meta property="twitter:title" content="SRM268 - Division2脱出 - my-github-actions-test"/>
+    <meta property="og:image" content="https://hayatoito.github.io/my-github-actions-test/favicon.png">
+    
+    <link rel="canonical" href="https://hayatoito.github.io/my-github-actions-test/2005/srm268/"/>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="author" href="http://www.hatena.ne.jp/hayatoito1/" />
+    <link href="https://hayatoito.github.io/my-github-actions-test/site.css" rel="stylesheet">
+    <link id="favicon" rel="icon" type="image/png" href="https://hayatoito.github.io/my-github-actions-test/favicon.png" >
+    <link href="https://hayatoito.github.io/my-github-actions-test/feed.xml" rel="alternate"
+          title="my-github-actions-test" type="application/atom+xml">
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-195971-6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-195971-6');
+    </script>
+    
+  </head>
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
+    
+    <nav class="navbar navbar-expand">
+      <ul class="navbar-nav">
+        <li class="nav-item ">
+          <a class="nav-link" href="https://hayatoito.github.io/my-github-actions-test/">my-github-actions-test</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item ">
+          <a class="nav-link" href="https://hayatoito.github.io/my-github-actions-test/timeline/">Timeline</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <small><a href="https://hayatoito.github.io/my-github-actions-test/feed.xml"><i class="fas fa-rss"></i></a></small>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+	<li class="dropdown">
+	  <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	    <i class="fas fa-paint-brush"></i>
+	  </button>
+	  <div class="dropdown-menu dropdown-menu-md-right" aria-labelledby="dropdownMenuButton">
+	    <button id="theme-light" class="dropdown-item" href="#">Light</button>
+	    <button id="theme-dark" class="dropdown-item" href="#">Dark</button>
+	  </div>
+	</li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="row">
+        
+        <div class="col">
+        
+          
+<article>
+  <header class="page-header">
+    <h1 id="top" class="site-article-title">
+      <a href="https://hayatoito.github.io/my-github-actions-test/2005/srm268/" class="self-link">
+        SRM268 - Division2脱出
+      </a>
+    </h1>
+    <div class="text-right">
+      
+	Hayato Ito
+      
+    </div>
+    
+    <div class="text-right">
+      <time datetime="2005-10-19">
+        2005-10-19
+      </time>
+    </div>
+    
+    
+  </header>
+  <div class="article-content">
+    <p><a href="http://www.topcoder.com/stat?c=round_overview&amp;rd=8001">SRM268</a> に挑戦．Division2 の問題です．</p>
+<h1 id="crosswordpuzzle-code"><a class="self-link" href="#crosswordpuzzle-code"><a href="http://www.topcoder.com/stat?c=problem_statement&amp;pm=5867&amp;rd=8001">CrossWordPuzzle</a> (<a href="http://www.topcoder.com/stat?c=problem_solution&amp;rm=246654&amp;rd=8001&amp;pm=5867&amp;cr=15632820">code</a>)</a></h1>
+<p>250 点問題． 1 文字・1 文字，順にチェックしている人が多かったようですが，正規表現を使用した文字列分割 (いわゆる split(..)) が利用できる言語なら，それを使えば簡単です．今回は正規表現を使用するほどでもないですが，正規表現を使用すれば，ずっと簡単になる問題も TopCoder ではときどき出題されるようです．</p>
+<h1 id="cmpdwords-code"><a class="self-link" href="#cmpdwords-code"><a href="http://www.topcoder.com/stat?c=problem_statement&amp;pm=3490&amp;rd=8001">CmpdWords</a> (<a href="http://www.topcoder.com/stat?c=problem_solution&amp;rm=246654&amp;rd=8001&amp;pm=3490&amp;cr=15632820">code</a>)</a></h1>
+<p>500 点問題．一見，問題がわかりにくいですが，ハッシュテーブルを使用して，合成文字列の重複のカウントをすれば，これも簡単です．</p>
+<h1 id="triarea"><a class="self-link" href="#triarea"><a href="http://www.topcoder.com/stat?c=problem_statement&amp;pm=4699&amp;rd=8001">TriArea</a></a></h1>
+<p>1000 点問題．重なり合う 2 等辺三角形が複数与えられます．それらがカバーする面積をもとめる問題です. 3 角形の重なりを判定して全体の面積を求めようととしたのですが，
+1 時間以上，格闘したあげく，時間切れでした．</p>
+<p>パラメータの条件として</p>
+<blockquote>
+<p>Each element of xCenter and yCenter will be between -100 and 100, inclusive.</p>
+</blockquote>
+<p>とあるので，全 2 次元空間をひたすら調べたほうが簡単でした. 1 x 1 のグリッドをさらに 4 つのエリアにわけて，そのエリアが三角形に含まれているなら</p>
+<blockquote>
+<p>(面積) += 0.25</p>
+</blockquote>
+<p>とすればよいです．</p>
+<pre><code class="language-java prettyprint">public class TriArea {
+
+  public double area(int[] xCenter,
+                     int[] yCenter, int[] height) {
+    double res = 0;
+    int N = xCenter.length;
+    int[] dx = {1, 2, 2, 3};
+    int[] dy = {2, 1, 3, 2};
+    for (int x = -200; x &lt; 200; x++) {
+      for (int y = -100; y &lt; 200; y++) {
+        for (int d = 0; d &lt; 4; d++) {
+          double nx = x + dx[d] / 4.0;
+          double ny = y + dy[d] / 4.0;
+          for (int i = 0; i &lt; N; i++) {
+            if (ny &lt; yCenter[i]) continue;
+            if ( height[i] &gt; Math.abs(xCenter[i] - nx)
+                  + (ny - yCenter[i])) {
+              res += 0.25;
+              break;
+            }
+          }
+        }
+      }
+    }
+    return res;
+  }
+}
+</code></pre>
+<p>これでも，Order は 400 x 400 x 4 x 25(3 角形の最大数) ですから，これで十分いけましたね．．</p>
+<h1 id="a"><a class="self-link" href="#a">結果</a></h1>
+<p>System Test の結果です． (
+<a href="http://www.topcoder.com/stat?c=coder_room_stats&amp;cr=15632820&amp;rd=8001&amp;rm=246654">Room Statistics</a>
+)</p>
+<p><img src="http://static.flickr.com/43/74682258_bc8a562129_o.png" alt="Room Statistics" /></p>
+<p>1000 点問題ができなかったのが悔やまれますが,250 点問題と 500 点問題は早めに
+Submit できたためか，ルーム内では Top のポイントでした． レーティングは 1152
+-&gt; 1303 と 1200 を超えたので，Division2 脱出です．</p>
+<h1 id="a-1"><a class="self-link" href="#a-1">今日の教訓</a></h1>
+<ul>
+<li>入力条件をよくチェックする．入力条件によっては，エレガントに解く必要はない．全部調べても大丈夫な場合がある．特に Division2 は．</li>
+</ul>
+
+  </div>
+</article>
+
+
+          
+          <footer class="base-footer text-center">
+            <small>
+              <a href="/">Home</a> | &copy; 2005-2020 hayato
+            </small>
+          </footer>
+          
+        </div>
+        
+      </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://hayatoito.github.io/my-github-actions-test/site.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/rust.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
