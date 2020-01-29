@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>404 Not Found - {{ site_name|striptags }}</title>
+    <link href="{{ site_url }}/favicon.ico" rel="shortcut icon" />
+    {% if google_analytics_tracking_id %}
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id={{ google_analytics_tracking_id }}"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "{{ google_analytics_tracking_id }}");
+    </script>
+    {% endif %}
+    <style>
+      body {
+        font-family: sans-serif;
+        color: #fff;
+        background-color: #222;
+      }
+      a,
+      a:visited {
+        color: rgb(27, 149, 224);
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    404 Not Found. ( ・∀・)つ
+    <a href="{{ site_url }}/timeline/">hayatoito.github.io/timeline/</a>
+  </body>
+</html>
