@@ -4,6 +4,8 @@ title: Hayato Ito
 template: index
 -->
 
+Test
+
 Software Engineer at Google
 
 - Mail: <hayato@google.com>
