@@ -4,7 +4,7 @@ title: Hayato Ito
 template: index
 -->
 
-[2020-01-30 Thu] Test
+[2020-01-30 Thu] Test 2
 
 Software Engineer at Google
 
