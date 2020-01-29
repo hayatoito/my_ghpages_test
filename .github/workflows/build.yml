@@ -12,8 +12,20 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: Read site version
+      id: site-version
+      run: |
+        . ./.env
+        echo "::set-output name=SITE_VERSION::${SITE_VERSION}"
+    - name: Cache site
+      id: cache-site
+      uses: actions/cache@v1
+      with:
+        path: ~/.cargo/bin/site
+        key: ${{ runner.os }}-cargo-bin-site-${{ hashFiles('.env') }}
     - name: Install site
-      run: cargo install site
+      if: steps.cache-site.outputs.cache-hit != 'true'
+      run: cargo install --version ${{ steps.site-version.outputs.SITE_VERSION }} site
     - name: Build
       run: site build --root-dir . --config=config-release.toml --out-dir ./build
     - name: Deploy
