@@ -17,20 +17,20 @@ jobs:
       run: |
         . ./.env
         echo "::set-output name=SITE_VERSION::${SITE_VERSION}"
-    - name: Cache bin
-      id: cache-bin
+    # We can not use ~/.cargo/bin as cache path
+    - name: Cache cargo bin
+      id: cache-cargo-bin
       uses: actions/cache@v1
       with:
-        path: ./bin
+        path: ./cargo-bin
         key: ${{ runner.os }}-bin-${{ hashFiles('.env') }}
     - name: Install site
       if: steps.cache-bin.outputs.cache-hit != 'true'
-      run: cargo install --version ${{ steps.site-version.outputs.SITE_VERSION }} site
-    - name: Copy site
-      if: steps.cache-bin.outputs.cache-hit != 'true'
-      run: mkdir -p ./bin && cp -a ~/.cargo/bin/site ./bin/site
+      run: |
+        cargo install --version ${{ steps.site-version.outputs.SITE_VERSION }} site
+        mkdir -p ./cargo-bin && cp -a ~/.cargo/bin/site ./cargo-bin/site
     - name: Build
-      run: ./bin/site build --root-dir . --config=config-release.toml --out-dir ./build
+      run: ./cargo-bin/site build --root-dir . --config=config-release.toml --out-dir ./build
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v2
       env:

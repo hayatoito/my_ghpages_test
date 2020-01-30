@@ -1,6 +1,3 @@
-# hayatoito.github.io
+# hayatoito.github.io/my-ghpages-test
 
-- Source of https://hayatoito.github.io/
-- How to build:
-  - You need to install [site](https://crates.io/crates/site)
-  - See [Makefile](./Makefile) for more info
+[![build](https://github.com/hayatoito/my-ghpages-test/workflows/build/badge.svg)](https://github.com/hayatoito/my-ghpages-test/actions)
