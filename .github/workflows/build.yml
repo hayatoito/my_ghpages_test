@@ -25,7 +25,7 @@ jobs:
         path: ./cargo-bin
         key: ${{ runner.os }}-bin-${{ hashFiles('.env') }}
     - name: Install site
-      if: steps.cache-bin.outputs.cache-hit != 'true'
+      if: steps.cache-cargo-bin.outputs.cache-hit != 'true'
       run: |
         cargo install --version ${{ steps.site-version.outputs.SITE_VERSION }} site
         mkdir -p ./cargo-bin && cp -a ~/.cargo/bin/site ./cargo-bin/site
